@@ -1,0 +1,17 @@
+#!name= NewBing绕过浏览器限制
+#!desc= 绕过必须使用Edge浏览器的显示
+#!author= Qiuyu
+
+[General]
+
+[rule]
+
+[rewrite]
+
+[host]
+
+[script]
+http-request ^https\:\/\/www\.bing\.com\/(search|new) script-path=https://raw.githubusercontent.com/ZhouQiuyu/Scripts/main/loon/NewBing.js
+
+[mitm]
+hostname = www.bing.com
